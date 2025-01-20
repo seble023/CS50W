@@ -1,0 +1,100 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* This removes default margins and paddings applied by browsers, ensuring consistent layout across different browsers. 
+  Box-sizing: border-box ensures the height and width mentioned stay the same in pixel terms as padding and borders are added. */
+  
+  body.centered {
+    height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
+  /* the body.centered is meant for the html pages where everyhting needs to be dead center in the middle 
+  of the page. The 100VH means 100% of the Viewport is taken up. This is needed for the best centering because
+  otherwise it might only be applied to the content.
+  Flex means the element becomes a flex container. If you put it in the body section in your HTML you have a 
+  body element and that becomes a flex container here in its children can be managed in a more advanced way 
+  and other key features gives you more room for customizability. The block just automatically puts it the width of the element and stacks it vertically 
+   */
+
+   .row > * {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+}
+
+/* This overrides css that is part of bootstraps grit system. !important makes sure that the css applied by bootstrap 
+is overriden. This targets all direct child elements of any element with the class .row. In a typical Bootstrap 
+grid layout, this means the * wildcard applies to all .col elements (e.g., .col, .col-md, .col-lg, etc.) inside a .row.*/
+
+
+body.left-alligned {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left; /* Ensures text alignment */
+  }
+  
+
+  .html_pages {
+    position: absolute; 
+    top: 10px;
+    right: 10px;
+    display: flex; 
+    gap: 50px; 
+  }
+  
+  .html_pages a {
+    text-decoration: none; 
+    padding: 5px; 
+  }
+  
+
+  .input-container {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: flex-start; 
+    gap: 10px; 
+  }
+  
+ 
+  h3 {
+    position: relative; 
+  } 
+  
+  .row {
+    margin-bottom: 15px; 
+  }
+  
+
+  .form-label {
+    font-weight: bold;
+    margin-bottom: 5px; 
+  }
+  
+  .form-control {
+    margin-bottom: 10px; 
+  }
+  
+  
+  .btn {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4285F4;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #3367D6; 
+  }
+
+  .button-group {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
